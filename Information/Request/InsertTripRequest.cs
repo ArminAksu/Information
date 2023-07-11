@@ -19,5 +19,6 @@ namespace Information.Request
         [Required]
         [StringLength(100)]
         public string TravelDistance { get; set; }
+        public int Kilometr { get; set; }
     }
 }

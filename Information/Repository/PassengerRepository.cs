@@ -14,7 +14,7 @@ namespace Information.Repositories
         {
             return _dataContext.passengers.Find(id);
         }
-        public Passenger GetPassengerByPassengerPoint(string PassengerPoint) 
+        public Passenger GetPassengerByPassengerPoint(int PassengerPoint) 
         {
             return _dataContext.passengers.Where(p => p.PassengerPoint == PassengerPoint).FirstOrDefault();
         }

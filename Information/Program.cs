@@ -1,5 +1,6 @@
 using Information.Data;
 using Information.Repositories;
+using Information.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,7 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IPassengerRepository, PassengerRepository>();
 builder.Services.AddScoped<ITripRepository, TripRepository>();
-
+builder .Services.AddScoped<IFactorRepository, FactorRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

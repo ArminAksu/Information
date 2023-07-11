@@ -11,10 +11,13 @@ namespace Information.Request
         public string LastName { get; set; }
 
         [StringLength(10, ErrorMessage = "کد ملی 10 کارکتر عدد باشد")]
-        [MinLength(10, ErrorMessage = "کد ملی 10 کارکتر عدد باشد")]
-        public string NationalCode { get; set; }
+        public int NationalCode { get; set; }
 
-        [StringLength(100, ErrorMessage = "حداکثر 100 کارکتر وارد کنید")]
-        public string PassengerPoint { get; set; }
+        [StringLength(100, ErrorMessage = " حداکثر 100 کارکتر وارد کنید")]
+        [MinLength(100, ErrorMessage = "امتیاز مسافر 100 کارکتر باشد")]
+        public int PassengerPoint { get; set; }
+        public int TotalAmount { get; set; }
+        public int Kilometr { get; set; }
+
     }
 }

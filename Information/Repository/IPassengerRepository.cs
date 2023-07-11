@@ -5,6 +5,6 @@ namespace Information.Repositories
     public interface IPassengerRepository
     {
         Passenger GetPassengerById(int id);
-        Passenger GetPassengerByPassengerPoint(string PassengerPoint);
+        Passenger GetPassengerByPassengerPoint(int PassengerPoint);
     }
 }

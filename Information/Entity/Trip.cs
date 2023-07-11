@@ -16,6 +16,7 @@ namespace Information.Entity
         [Required]
         [StringLength(50)]
         public string EndTime { get; set; }
+        public int Kilometr { get; set; }
 
         [Required]
         [StringLength(50)]

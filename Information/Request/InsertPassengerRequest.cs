@@ -14,10 +14,12 @@ namespace Information.Request
 
         [Required]
         [StringLength(10)]
-        public string NationalCode { get; set; }
+        public int NationalCode { get; set; }
 
         [Required]
         [StringLength(100)]
-        public string PassengerPoint { get; set; }
+        public int PassengerPoint { get; set; }
+        public int Kilometr { get; set; }
+        public int TotalAmount { get; set; }
     }
 }

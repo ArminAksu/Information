@@ -24,9 +24,9 @@ namespace Information.Entity
         [StringLength(100)]
         public string Travel { get; set;}
 
-        [Required]
-        [StringLength(100)]
-        public string TravelAmount { get; set;}
+        //[Required]
+        //[StringLength(100)]
+        public decimal TravelAmount { get; set;}
 
         [Required]
         [StringLength(300)]

@@ -17,6 +17,7 @@ namespace Information.Request
 
         [Required(ErrorMessage = "مسافت سفر را به ازای هر کیلوتر وارد کنید")]
         [StringLength(100)]
-        public decimal TravelDistance { get; set; }
+        public string TravelDistance { get; set; }
+        public int Kilometr { get; set; }
     }
 }
